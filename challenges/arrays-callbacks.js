@@ -91,14 +91,15 @@ function consume(a, b,cb){
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
 
-const add = function(a,b){
-	return a + b;
+
+const add = (a, b) => {
+  return a + b;
 }
-const multiply = function(a,b){
-	return a * b;
+const multiply = (a, b) => {
+  return a * b;
 }
-const greeting = function(firstName, lastName){
-	return `Hello ${firstName} ${lastName}, nice to meet you`
+const greeting = (firstName, lastName) =>{
+	return `Hello ${firstName} ${lastName}, nice to meet you`;
 }
 
 
