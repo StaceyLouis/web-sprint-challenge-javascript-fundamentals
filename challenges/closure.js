@@ -1,4 +1,4 @@
-// ==== Closures ==== 
+//==== Closures ==== 
 
 /* Task 1: Study the code below and explain in your own words why nested function can access the variable internal. */
 
@@ -18,7 +18,22 @@ myFunction();
 
 // Explanation: 
 
+// The nestedFunction uses closure. Because its nested inside of myFunction, it has access to all the variables within it like internal as well as any global variables. 
 
 /* Task 2: Counter */
 
 /* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
+
+function summation(num){
+	let array = [];
+	for(let i=0; i <= num; i++){
+	 array.push(i);
+	}
+const sum = array.reduce(function(item1,item2){
+	return item1 + item2;
+});
+	
+	return sum;
+}
+
+console.log(summation(4));
